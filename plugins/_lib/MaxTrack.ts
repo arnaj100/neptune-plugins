@@ -39,6 +39,6 @@ export class MaxTrack {
 	public static hasHiRes(trackItem: TrackItem): boolean {
 		const tags = trackItem.mediaMetadata?.tags;
 		if (tags === undefined) return false;
-		return tags.findIndex((tag) => tag === "HIRES_LOSSLESS") !== -1;
+		return tags.findIndex((tag) => tag === "DOLBY_ATMOS") !== -1;
 	}
 }
